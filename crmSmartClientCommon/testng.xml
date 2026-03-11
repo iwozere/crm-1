@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">-->
+<suite name="Suite" parallel="false" verbose="10">
+<!-- <listeners>
+		<listener class-name="sunrise.crm.util.SimpleTestListener" />
+	</listeners>-->
+	<test name="all" preserve-order="false">
+		<groups>
+			<run>
+				<exclude name="slow" />
+				<exclude name="error" />
+				<exclude name="data-error" />
+				<exclude name="not-a-test" />
+				<exclude name="obsolete" />
+				<exclude name="fail" />
+				<exclude name="external" />
+				<exclude name="powermock" />
+				<exclude name="fail_unknown_reason" />
+			</run>
+		</groups>
+		<packages>
+ 			<package name="sunrise.crm.custom.*" />
+			<package name="sunrise.crm.domain.*" />
+			<package name="sunrise.crm.integration.*">
+				<exclude name="sunrise.crm.integration.linecheck.generated.*"></exclude>
+				<exclude name="sunrise.crm.integration.coveragecheck.generated.*"></exclude>
+				<exclude name="sunrise.crm.integration.abusetool.*"></exclude>
+				<exclude name="sunrise.crm.integration.xip.generated.*"></exclude>
+			</package>
+			<package name="sunrise.crm.monitoring.*" />
+			<package name="sunrise.crm.persistence.*" />
+			<package name="sunrise.crm.processcontroller.*" />
+			<package name="sunrise.crm.provisioning.*" />
+			<package name="sunrise.crm.scheduler.*" />
+			<package name="sunrise.crm.service.*" />
+			<package name="sunrise.crm.suite.*" />
+			<package name="sunrise.crm.testng.*" />
+			<package name="sunrise.crm.util.*" />
+ 		</packages>
+	</test>
+</suite>
