@@ -1,14 +1,13 @@
-# Project Specification: crm-domain
+# CRM Domain Specification
 
 ## Purpose
-The "Heart" of the system. Contains the business logic and data structures that define the Telecom Order lifecycle. It is designed to be side-effect free and highly testable.
+The `crm-domain` module is the core of the CRM system. It contains the fundamental business concepts and logic of the application.
 
-## Tech Stack
-- **Java:** 21 (LTS)
-- **Dependencies:** None (Strictly prohibited: Spring, JPA, Hibernate, Jackson annotations).
-- **Concurrency:** Thread-safe by design via effectively immutable Records.
+## Responsibilities
+- Define core domain objects (Records) like `Order`, `LineItem`, etc.
+- Houses "Simple Services" (Domain Services) that operate on domain objects using pure business logic.
+- Defines repository interfaces that the data access layer must implement.
 
-## Architectural Constraints
-1. **Purity:** Logic must not perform I/O (no DB, no API calls).
-2. **Deterministic:** Given the same input Order and Context, the output must always be the same.
-3. **Cross-Platform Readiness:** Must be compilable as a standalone JAR for use in non-server environments (e.g., CLI tools or potential future mobile integrations).
+## Constraints
+- **Zero Dependencies**: This module must remain "Pure Java" and not depend on any external frameworks like Spring, Hibernate, or JPA.
+- **Portability**: By keeping it pure, this module can be shared across different environments if needed.
