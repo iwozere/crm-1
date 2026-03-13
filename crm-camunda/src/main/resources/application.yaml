@@ -1,0 +1,20 @@
+camunda:
+  client:
+    mode: self-managed
+    auth:
+      method: none
+    zeebe:
+      grpc-address: http://localhost:26500
+      rest-address: http://localhost:8088
+    execution-threads: 10
+
+spring:
+  application:
+    name: crm-camunda
+  threads:
+    virtual:
+      enabled: true
+
+logging:
+  level:
+    io.camunda.client: DEBUG
