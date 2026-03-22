@@ -1,7 +1,7 @@
-# CRM Service Specification
+# CRM Common Specification
 
 ## Purpose
-The `crm-service` module is the transport layer and the primary entry point for external consumers of the CRM system.
+The `crm-common` module is the transport layer and the primary entry point for external consumers of the CRM system.
 
 ## Responsibilities
 - Defining REST Controllers and gRPC stubs.

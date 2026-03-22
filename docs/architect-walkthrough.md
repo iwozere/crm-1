@@ -8,7 +8,7 @@ The multi-module Maven setup is well-organized:
 - `crm-domain`: Pure business logic (Zero-dependency).
 - `crm-dal`: Data Access Layer (Split into `generated` and `runtime`).
 - `crm-be-tasks`: Business orchestration (Skeleton).
-- `crm-service`: Transport layer (Skeleton).
+- `crm-common`: Transport layer (Skeleton).
 - `crm-camunda`: Runtime orchestration.
 
 ## 2. Dependencies [OK]

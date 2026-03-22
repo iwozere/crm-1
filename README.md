@@ -33,11 +33,11 @@ The project is organized into several Maven modules, each with a specific respon
 * **Dependencies:** `crm-be-tasks`.
 * **Docs:** [project-specification.md](file:///c:/dev/sunrise/crm-backend/docs/project-specification.md)
 
-### 5. `crm-service` (Service Entry Point)
+### 4. `crm-common` (Service Entry Point)
 * **Responsibility:** Transport layer.
 * **Contents:** REST Controllers, gRPC stubs, and DTOs for the external world.
 * **Dependencies:** `crm-be-tasks`.
-* **Docs:** [project-specification.md](file:///c:/dev/sunrise/crm-service/docs/project-specification.md)
+* **Docs:** [project-specification.md](file:///c:/dev/sunrise/crm-common/docs/project-specification.md)
 
 ### 6. `crm-camunda` (The Runtime)
 * **Responsibility:** The Spring Boot wrapper that manages the Camunda Process Engine.
@@ -51,8 +51,7 @@ The project is organized into several Maven modules, each with a specific respon
 ```mermaid
 graph TD
     subgraph "Application"
-        Service[crm-service] --> Tasks[crm-be-tasks]
-        Camunda[crm-camunda] -.-> Tasks
+        Service[crm-common] --> Tasks[crm-be-tasks]
         Backend[crm-backend] --> Tasks
     end
 

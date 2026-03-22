@@ -11,8 +11,8 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>crm-service</artifactId>
-    <name>CRM Service Entry Point</name>
+    <artifactId>crm-common</artifactId>
+    <name>CRM Common Service</name>
 
     <dependencies>
         <dependency>

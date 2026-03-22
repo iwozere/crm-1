@@ -17,7 +17,7 @@
         <module>crm-dal</module>
         <module>crm-be-tasks</module>
         <module>crm-backend</module>
-        <module>crm-service</module>
+        <module>crm-common</module>
     </modules>
 
     <properties>
