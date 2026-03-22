@@ -1,0 +1,11 @@
+server:
+  port: 8083  # Different port from crm-backend (8082)
+
+spring:
+  application:
+    name: crm-webservice
+
+logging:
+  level:
+    ROOT: INFO
+    ch.sunrise.webservice: DEBUG

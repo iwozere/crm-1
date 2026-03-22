@@ -18,6 +18,8 @@
         <module>crm-be-tasks</module>
         <module>crm-backend</module>
         <module>crm-common</module>
+        <module>crm-ws-tasks</module>
+        <module>crm-webservice</module>
     </modules>
 
     <properties>
@@ -56,6 +58,7 @@
                     <configuration>
                         <source>${java.version}</source>
                         <target>${java.version}</target>
+                        <parameters>true</parameters>
                     </configuration>
                 </plugin>
             </plugins>

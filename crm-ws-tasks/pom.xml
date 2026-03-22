@@ -11,10 +11,15 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>crm-be-tasks</artifactId>
-    <name>CRM Business Tasks</name>
+    <artifactId>crm-ws-tasks</artifactId>
+    <name>CRM Web Service Tasks</name>
 
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>ch.sunrise</groupId>
             <artifactId>crm-domain</artifactId>
@@ -25,12 +30,6 @@
             <artifactId>crm-dal</artifactId>
             <version>${project.version}</version>
             <type>pom</type>
-        </dependency>
-
-        <!-- Expose a REST / gRPC API to allow external callers (e.g. crm-camunda) to invoke business tasks -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
         <dependency>
