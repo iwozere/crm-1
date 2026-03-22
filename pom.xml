@@ -16,7 +16,7 @@
         <module>crm-domain</module>
         <module>crm-dal</module>
         <module>crm-be-tasks</module>
-        <module>crm-camunda</module>
+        <module>crm-backend</module>
         <module>crm-service</module>
     </modules>
 

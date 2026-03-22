@@ -1,0 +1,14 @@
+camunda:
+  zeebe:
+    client:
+      gateway-address: localhost:26500
+      plaintext: true
+      worker:
+        max-jobs-active: 32  # Jobs fetched per poll
+        threads: 8           # Parallel execution threads
+zeebe:
+  client:
+    default-job-timeout: 1m
+    default-job-retries: 3
+server:
+  port: 8082  # Avoid c8run ports

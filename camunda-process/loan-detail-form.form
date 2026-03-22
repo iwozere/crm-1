@@ -1,0 +1,33 @@
+{
+  "components": [
+    {
+      "label": "Customer ID",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_1jp79zl",
+        "columns": null
+      },
+      "id": "Field_0mezeul",
+      "key": "customerId"
+    },
+    {
+      "label": "Amount",
+      "type": "number",
+      "layout": {
+        "row": "Row_16dsfp8",
+        "columns": null
+      },
+      "id": "Field_0trngde",
+      "key": "amount"
+    }
+  ],
+  "type": "default",
+  "id": "loan-detail-form",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.8.0",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.45.0"
+  },
+  "schemaVersion": 19
+}
