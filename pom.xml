@@ -15,9 +15,15 @@
     <modules>
         <module>crm-domain</module>
         <module>crm-dal</module>
+        <module>crm-integration</module>
+        <module>crm-integration-runtime</module>
+        <module>crm-shared</module>
         <module>crm-be-tasks</module>
-        <module>crm-camunda</module>
-        <module>crm-service</module>
+        <module>crm-backend</module>
+        <module>crm-ws-tasks</module>
+        <module>crm-webservice</module>
+        <module>crm-ui-tasks</module>
+        <module>crm-frontend</module>
     </modules>
 
     <properties>
@@ -56,6 +62,7 @@
                     <configuration>
                         <source>${java.version}</source>
                         <target>${java.version}</target>
+                        <parameters>true</parameters>
                     </configuration>
                 </plugin>
             </plugins>

@@ -1,0 +1,16 @@
+server:
+  port: 8084  # Different port from crm-webservice (8083) and crm-backend (8082)
+
+spring:
+  application:
+    name: crm-frontend
+
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+
+logging:
+  level:
+    ROOT: INFO
+    ch.sunrise.frontend: DEBUG

@@ -4,4 +4,21 @@
           xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
           http://maven.apache.org/xsd/settings-1.0.0.xsd">
     <localRepository>d:\tools\.m2</localRepository>
+
+    <proxies>
+        <proxy>
+            <id>proxy1</id>
+            <active>true</active>
+            <protocol>http</protocol>
+            <host>proxy1.swi.srse.net</host>
+            <port>8080</port>
+        </proxy>
+        <proxy>
+            <id>proxy2</id>
+            <active>false</active>
+            <protocol>http</protocol>
+            <host>proxy2.swi.srse.net</host>
+            <port>8080</port>
+        </proxy>
+    </proxies>
 </settings>
