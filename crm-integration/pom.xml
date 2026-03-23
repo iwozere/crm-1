@@ -11,13 +11,14 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>crm-ws-tasks</artifactId>
-    <name>CRM Web Service Tasks</name>
+    <artifactId>crm-integration</artifactId>
+    <name>CRM Integration</name>
+    <description>Pure generated code for connections to external systems</description>
 
     <dependencies>
         <dependency>
             <groupId>ch.sunrise</groupId>
-            <artifactId>crm-shared</artifactId>
+            <artifactId>crm-integration-runtime</artifactId>
             <version>${project.version}</version>
         </dependency>
 
@@ -26,23 +27,8 @@
             <artifactId>spring-boot-starter</artifactId>
         </dependency>
 
-        <dependency>
-            <groupId>ch.sunrise</groupId>
-            <artifactId>crm-domain</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>ch.sunrise.dal</groupId>
-            <artifactId>crm-dal</artifactId>
-            <version>${project.version}</version>
-            <type>pom</type>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
+        <!-- Add integration-specific dependencies as needed -->
+        <!-- Examples: REST clients, SOAP clients, messaging, etc. -->
     </dependencies>
 
     <build>

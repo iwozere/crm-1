@@ -21,6 +21,11 @@
     <dependencies>
         <dependency>
             <groupId>ch.sunrise</groupId>
+            <artifactId>crm-shared</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>ch.sunrise</groupId>
             <artifactId>crm-be-tasks</artifactId>
             <version>${project.version}</version>
         </dependency>

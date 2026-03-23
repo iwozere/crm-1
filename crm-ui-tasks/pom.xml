@@ -11,8 +11,8 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>crm-ws-tasks</artifactId>
-    <name>CRM Web Service Tasks</name>
+    <artifactId>crm-ui-tasks</artifactId>
+    <name>CRM UI Tasks</name>
 
     <dependencies>
         <dependency>
