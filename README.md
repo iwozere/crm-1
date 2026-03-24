@@ -227,5 +227,3 @@ Each adapter module (`crm-backend`, `crm-webservice`, `crm-frontend`) defines it
 
 5. **Deploy BPMN Processes:**
    Use the BPMN process files in `camunda-process/` directory to deploy workflows to your Camunda instance.
-
-Would you like to start with the main `Order` DTO?
